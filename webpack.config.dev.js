@@ -24,7 +24,13 @@ module.exports = {
     }),
     new ExtractTextPlugin("stylesheets/[name].css")
   ],
+
   module: {
+    // preLoaders: [
+    // { test: /\.jsx?$/, 
+    //   loader: 'eslint', 
+    //   exclude: /node_modules/ }
+    // ],
     loaders: [{
       test: /\.(jpe?g|png|gif|svg)$/i,
         exclude: /fonts/,
